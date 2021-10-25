@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task.API</name>
+    </assembly>
+    <members>
+        <member name="T:TaskAPI.Controllers.WeatherForecastController">
+            -------------------------------------------------------------------------------------------------
+             <summary>	A controller for handling weather forecasts. </summary>
+            
+             <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+            
+        </member>
+        <member name="F:TaskAPI.Controllers.WeatherForecastController.Summaries">
+            <summary>	The summaries. </summary>
+        </member>
+        <member name="F:TaskAPI.Controllers.WeatherForecastController._logger">
+            <summary>	The logger. </summary>
+        </member>
+        <member name="M:TaskAPI.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{TaskAPI.Controllers.WeatherForecastController})">
+            -------------------------------------------------------------------------------------------------
+             <summary>	Constructor. </summary>
+            
+             <param name="logger">	The logger. </param>
+            
+        </member>
+        <member name="M:TaskAPI.Controllers.WeatherForecastController.Get">
+            -------------------------------------------------------------------------------------------------
+             <summary>
+             	(An Action that handles HTTP GET requests) enumerates the items in this collection that meet given
+             	criteria.
+             </summary>
+            
+             <returns>	An enumerator that allows foreach to be used to process the matched items. </returns>
+            
+        </member>
+        <member name="T:TaskAPI.Program">
+            <summary> A program. </summary>
+        </member>
+        <member name="M:TaskAPI.Program.Main(System.String[])">
+            -------------------------------------------------------------------------------------------------
+             <summary> Main entry-point for this application. </summary>
+            
+             <param name="args"> The arguments. </param>
+            
+        </member>
+        <member name="M:TaskAPI.Program.CreateWebHostBuilder(System.String[])">
+            -------------------------------------------------------------------------------------------------
+             <summary> Creates web host builder. </summary>
+            
+             <param name="args"> The arguments. </param>
+            
+             <returns> The new web host builder. </returns>
+            
+        </member>
+        <member name="T:TaskAPI.Startup">
+            <summary>	A startup. </summary>
+        </member>
+        <member name="P:TaskAPI.Startup.Logger">
+            -------------------------------------------------------------------------------------------------
+             <summary>	Gets the logger. </summary>
+            
+             <value>	The logger. </value>
+            
+        </member>
+        <member name="P:TaskAPI.Startup.Configuration">
+            -------------------------------------------------------------------------------------------------
+             <summary>	Gets the configuration. </summary>
+            
+             <value>	The configuration. </value>
+            
+        </member>
+        <member name="P:TaskAPI.Startup.BasePath">
+            -------------------------------------------------------------------------------------------------
+             <summary>	Gets or sets the full pathname of the base file. </summary>
+            
+             <value>	The full pathname of the base file. </value>
+            
+        </member>
+        <member name="M:TaskAPI.Startup.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILogger{TaskAPI.Startup})">
+            -------------------------------------------------------------------------------------------------
+             <summary>	Constructor. </summary>
+            
+             <param name="env">   	The environment. </param>
+             <param name="logger">	The logger. </param>
+            
+        </member>
+        <member name="M:TaskAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            -------------------------------------------------------------------------------------------------
+             <summary>	Configure services. </summary>
+            
+             <param name="services">	The services. </param>
+            
+        </member>
+        <member name="M:TaskAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            -------------------------------------------------------------------------------------------------
+             <summary>	Configures. </summary>
+            
+             <param name="app">				The application. </param>
+             <param name="env">				The environment. </param>
+             <param name="loggerFactory">	The logger factory. </param>
+            
+        </member>
+        <member name="T:TaskAPI.WeatherForecast">
+            <summary>	A weather forecast. </summary>
+        </member>
+        <member name="P:TaskAPI.WeatherForecast.Date">
+            -------------------------------------------------------------------------------------------------
+             <summary>	Gets or sets the Date/Time of the date. </summary>
+            
+             <value>	The date. </value>
+            
+        </member>
+        <member name="P:TaskAPI.WeatherForecast.TemperatureC">
+            -------------------------------------------------------------------------------------------------
+             <summary>	Gets or sets the temperature c. </summary>
+            
+             <value>	The temperature c. </value>
+            
+        </member>
+        <member name="P:TaskAPI.WeatherForecast.TemperatureF">
+            -------------------------------------------------------------------------------------------------
+             <summary>	Gets the temperature f. </summary>
+            
+             <value>	The temperature f. </value>
+            
+        </member>
+        <member name="P:TaskAPI.WeatherForecast.Summary">
+            -------------------------------------------------------------------------------------------------
+             <summary>	Gets or sets the summary. </summary>
+            
+             <value>	The summary. </value>
+            
+        </member>
+    </members>
+</doc>
