@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Task.API;
 
 namespace TaskAPI
 {
@@ -17,7 +18,15 @@ namespace TaskAPI
 		///
 		public static void Main( string[] args )
 		{
+			CGlobal m_global = new CGlobal();
+
+			//@Robert: In dem Controler habe ich die Methode SetGlobal(CGlobal global) geschrieben.
+			//Wie kann ich diese Methode aus Main aufrufen? ... bzw die Instanz der Klasse CGlobal 'm_global' an den Controller übergeben?
+			//Die Controller-Instanz wird bei jedem HTTP(s) request ja neu erstellt...
+
 			var host = CreateWebHostBuilder( args ).Build();
+
+			
 
 
 			host.Run();

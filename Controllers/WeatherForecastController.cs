@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Task.API;
 
 namespace TaskAPI.Controllers
 {
@@ -16,6 +17,14 @@ namespace TaskAPI.Controllers
 	[Route( "[controller]" )]
 	public class WeatherForecastController : ControllerBase
 	{
+		private CGlobal m_global = null;
+
+		//Wie kann ich diese variable von außerhalb setzen? (aus z.B. Main oder Startup?)
+		public void SetGlobal(CGlobal global)
+        {
+			m_global = global;
+        }
+
 		/// <summary>	The summaries. </summary>
 		private static readonly string[] Summaries = new[]
 		{
@@ -55,5 +64,11 @@ namespace TaskAPI.Controllers
 			} )
 			.ToArray();
 		}
+
+		[HttpGet("countries")]
+		public IEnumerable<string> GetCountries()
+        {
+			return m_global.Countries;
+        }
 	}
 }
